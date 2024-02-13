@@ -54,10 +54,13 @@
 </script>
 
 <template>
-  <div class="flex gap-4 flex-col justify-center items-center mt-6 h-[80vh]">
+  <div class="flex gap-4 flex-col justify-center p-6 items-center mt-6 h-[50vh]">
+    <p class="text-lg">Tekan tombol merah di bawah untuk mengocok nama</p>
     <p class="font-[courier] font-bold text-3xl md:text-6xl">{{ pickedData?.name }}</p>
-    <button @click="randomizeName" class="bg-rose-500 text-white p-4 rounded-full">
-      <IconShuffle />
+    <button
+      @click="randomizeName"
+      class="bg-rose-500 hover:bg-rose-600 transition-all active:bg-rose-700 text-white p-4 rounded-full">
+      Kocok 🎲
     </button>
   </div>
 </template>

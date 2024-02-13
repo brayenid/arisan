@@ -61,9 +61,13 @@
   <form class="flex flex-col gap-4 w-full max-w-96 justify-center mx-auto mt-6" @submit.prevent="addNewMember">
     <input type="text" required name="name" v-model="memberName" placeholder="Masukan nama anggota" />
     <div class="flex gap-2">
-      <button type="submit" class="flex-[1]">Tambah Anggota</button>
-      <button type="button" v-if="dataSource.getData().length > 0" class="flex-[1]" @click="resetSelected">
-        Reset Keterpilihan
+      <button type="submit" class="flex-[1]">Tambah Anggota 🐣</button>
+      <button
+        type="button"
+        v-if="dataSource.getData().length > 0"
+        class="flex-[1] !bg-red-400 hover:!bg-red-500"
+        @click="resetSelected">
+        Reset Keterpilihan 🗽
       </button>
     </div>
   </form>

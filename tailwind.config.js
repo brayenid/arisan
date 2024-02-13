@@ -4,7 +4,7 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        bowlby: ['Bowlby One SC', 'sans-serif']
+        silkscreen: ['Silkscreen', 'sans-serif']
       }
     }
   },

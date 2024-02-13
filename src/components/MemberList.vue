@@ -51,13 +51,15 @@
 </style>
 
 <template>
-  <div class="text-center mt-4 p-4">
+  <div class="text-center mt-4 p-6">
     <div
       class="bg-emerald-200 hover:opacity-80 transition-all p-2 rounded-lg inline-block m-1 cursor-pointer"
       :class="{ red: data.selected }"
       v-for="(data, key) in datas"
       :key="key">
-      <p @click="removeData(data?.id as string)">{{ data.name }}</p>
+      <p @click="removeData(data?.id as string)">
+        {{ data.name }} <span v-if="data.selected">🥇</span> <span v-else>🕧</span>
+      </p>
     </div>
   </div>
 </template>

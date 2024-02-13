@@ -1,4 +1,4 @@
-<style lang="postcss">
+<style lang="postcss" scoped>
   a {
     @apply text-lg relative;
   }
@@ -18,9 +18,11 @@
   }
 </style>
 <template>
-  <div class="flex w-full justify-center items-center gap-4">
-    <RouterLink to="/">Kocok Arisan</RouterLink>
+  <div class="flex w-full justify-center items-center gap-4 mt-5">
+    <RouterLink to="/">Beranda</RouterLink>
     <span>/</span>
     <RouterLink to="/members">Anggota</RouterLink>
+    <span>/</span>
+    <RouterLink to="/shuffle">Kocok Arisan</RouterLink>
   </div>
 </template>

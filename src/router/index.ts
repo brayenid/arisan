@@ -10,15 +10,23 @@ const router = createRouter({
       children: [
         {
           path: '',
+          name: 'index',
           component: () => import('@/views/HomeView.vue')
         },
         {
+          path: 'shuffle',
+          name: 'shuffle',
+          component: () => import('@/views/ShuffleView.vue')
+        },
+        {
           path: 'members',
+          name: 'members',
           component: () => import('@/views/MembersView.vue')
         }
       ]
     }
-  ]
+  ],
+  linkExactActiveClass: 'active'
 })
 
 export default router
